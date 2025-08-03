@@ -13,9 +13,7 @@ if not api_key:
 # Configure Gemini
 genai.configure(api_key=api_key)
 
-# Use the correct model from your available list
 model = genai.GenerativeModel("gemini-1.5-flash-latest")
-
 
 def generate_response(prompt: str) -> str:
     try:
